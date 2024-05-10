@@ -1,4 +1,6 @@
 <?php
+require_once __DIR__ . "/Models/Movie.php";
+require_once __DIR__ . "/Models/Serie.php";
 class Production
 {
     public $titolo;
@@ -28,8 +30,6 @@ class Production
     }
 }
 
-
-
 $film1 = new Production('Star Wars', 'Inglese', 5);
 $result = $film1->setVote(-7);
 
@@ -46,7 +46,7 @@ $film2->setVote(-5);
 $film3 = new Production('Spiderman 3', 'Tedesco', -3);
 $film3->setVote(6);
 
-var_dump($film1, $film2, $film3);
+// var_dump($film1, $film2, $film3);
 
 ?>
 
@@ -63,6 +63,11 @@ var_dump($film1, $film2, $film3);
 
 <body>
     <main>
+
+        <div>
+
+        </div>
+
         <div class="container">
             <div class="row">
                 <div class="col">
